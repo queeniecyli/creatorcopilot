@@ -1,6 +1,6 @@
 # CreatorCopilot 🎬
 
-AI-powered content strategy agent for social media campaigns, built with Claude 3.5 Sonnet and the Agent SDK.
+AI-powered content strategy agent for social media campaigns, built with OpenAI GPT-4o and function calling.
 
 ## Overview
 
@@ -8,8 +8,8 @@ CreatorCopilot is an intelligent AI agent that helps content creators and small 
 
 ### Key Features
 
-- **AI Agent Architecture**: Uses Claude Code Agent SDK for autonomous workflow orchestration
-- **Tool Use**: Claude autonomously determines when to research trends via SerpAPI
+- **AI Agent Architecture**: Uses OpenAI function calling for autonomous workflow orchestration
+- **Tool Use**: AI autonomously determines when to research trends via SerpAPI
 - **Complete Campaign Generation**: Scripts, hooks, shot lists, captions, hashtags, and optimization tips
 - **Platform-Specific**: Optimized for TikTok, Instagram Reels, and YouTube Shorts
 - **Trend-Grounded**: Uses real search data to inform content strategy
@@ -18,8 +18,8 @@ CreatorCopilot is an intelligent AI agent that helps content creators and small 
 
 ### Backend
 - **FastAPI**: Modern Python web framework
-- **Claude 3.5 Sonnet**: Anthropic's latest model with 200K context window
-- **Claude Code Agent SDK**: For building reliable AI agents
+- **OpenAI GPT-4o**: Latest multimodal model with 128K context window
+- **OpenAI Function Calling**: For building reliable AI agents
 - **SerpAPI**: For real-time trend research
 - **Python 3.10+**
 
@@ -37,7 +37,7 @@ creatorcopilot/
 │   ├── app/
 │   │   ├── main.py              # FastAPI application
 │   │   ├── agent/
-│   │   │   ├── creator_agent.py # Claude agent with tool use
+│   │   │   ├── creator_agent.py # OpenAI agent with function calling
 │   │   │   ├── tools.py         # Tool definitions (SerpAPI)
 │   │   │   └── prompts.py       # System prompts
 │   │   └── api/
@@ -64,7 +64,7 @@ creatorcopilot/
 
 - Python 3.10 or higher
 - Node.js 18 or higher
-- Anthropic API key ([get one here](https://console.anthropic.com/))
+- OpenAI API key ([get one here](https://platform.openai.com/api-keys))
 - SerpAPI key (optional, for real trend data - [get one here](https://serpapi.com/))
 
 ### Backend Setup
@@ -92,7 +92,7 @@ cp .env.example .env
 
 5. Edit `.env` and add your API keys:
 ```
-ANTHROPIC_API_KEY=your_actual_claude_api_key
+OPENAI_API_KEY=your_actual_openai_api_key
 SERPAPI_KEY=your_serpapi_key  # Optional - will use mock data if not provided
 FRONTEND_URL=http://localhost:5173
 ENVIRONMENT=development
@@ -225,7 +225,7 @@ Structured Campaign Output
 
 ### Agent Architecture
 
-The CreatorCopilot agent uses Claude's tool use capability to autonomously:
+The CreatorCopilot agent uses OpenAI's function calling capability to autonomously:
 
 1. **Analyze** the business context and campaign requirements
 2. **Decide** to use the trend research tool
@@ -235,15 +235,15 @@ The CreatorCopilot agent uses Claude's tool use capability to autonomously:
 
 This demonstrates true agent behavior, not just simple LLM prompting.
 
-## Why Claude Code?
+## Why OpenAI GPT-4o?
 
-I chose Claude 3.5 Sonnet and the Agent SDK for several reasons:
+I chose OpenAI GPT-4o with function calling for several reasons:
 
-- **Extended Context**: 200K token window for comprehensive analysis
-- **Superior Tool Use**: Excellent at autonomous decision-making
+- **Advanced Function Calling**: Excellent at autonomous decision-making and tool orchestration
+- **Global Availability**: Broad regional support including Australia
 - **Content Quality**: Exceptional performance in creative content and marketing copy
-- **Structured Framework**: Production-ready patterns for building reliable agents
-- **Enterprise Readiness**: Safety and reliability for business-critical applications
+- **Production-Ready**: Mature API with extensive documentation and reliability
+- **Cost Efficiency**: Competitive pricing suitable for both prototyping and production
 
 ## Development Notes
 
@@ -292,7 +292,7 @@ The application includes mock data fallbacks:
 ## Author
 
 Built by Queenie Li as a portfolio project demonstrating:
-- AI agent architecture with Claude Code SDK
+- AI agent architecture with OpenAI function calling
 - Full-stack development (React + FastAPI)
 - REST API integration
 - Cloud application design
