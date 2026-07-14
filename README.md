@@ -288,8 +288,3 @@ The application includes mock data fallbacks:
 - A/B testing recommendations
 - Performance prediction ML models
 - Export to PDF/presentation formats
-
-
----
-
-**Note**: This is a portfolio/demonstration project. For production use, consider adding authentication, rate limiting, database persistence, and more robust error handling.
