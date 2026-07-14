@@ -10,8 +10,8 @@ CreatorCopilot is an intelligent AI agent that helps content creators and small 
 
 - **AI Agent Architecture**: Uses OpenAI function calling for autonomous workflow orchestration
 - **Tool Use**: AI autonomously determines when to research trends via SerpAPI
-- **Complete Campaign Generation**: Scripts, hooks, shot lists, captions, hashtags, and optimization tips
-- **Platform-Specific**: Optimized for TikTok, Instagram Reels, and YouTube Shorts
+- **Complete Campaign Generation**: Scripts, hooks, shot lists, captions, hashtags, and optimisation tips
+- **Platform-Specific**: Optimised for TikTok, Instagram Reels, and YouTube Shorts
 - **Trend-Grounded**: Uses real search data to inform content strategy
 
 ## Tech Stack
@@ -149,7 +149,7 @@ The frontend will be available at `http://localhost:5173`
    - Engaging caption
    - Relevant hashtags
    - Call-to-action
-   - Platform-specific optimization tips
+   - Platform-specific optimisation tips
 
 ## API Documentation
 
@@ -231,9 +231,9 @@ The CreatorCopilot agent uses OpenAI's function calling capability to autonomous
 2. **Decide** to use the trend research tool
 3. **Execute** the SerpAPI search to gather trending topics
 4. **Synthesize** trend data with business context
-5. **Generate** a complete, platform-optimized campaign strategy
+5. **Generate** a complete, platform-optimised campaign strategy
 
-This demonstrates true agent behavior, not just simple LLM prompting.
+This demonstrates true agent behaviour, not just simple LLM prompting.
 
 ## Why OpenAI GPT-4o?
 
