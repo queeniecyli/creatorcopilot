@@ -54,7 +54,7 @@ export default function Generator() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            CreatorCopilot 🎬
+            CreatorCopilot
           </h1>
           <p className="text-xl text-gray-600">
             AI-powered content strategy for social media campaigns
@@ -198,7 +198,7 @@ export default function Generator() {
         </div>
 
         <div className="mt-8 text-center text-sm text-gray-600">
-          <p>Powered by Claude 3.5 Sonnet</p>
+          <p>Powered by OpenAI GPT-4o</p>
         </div>
       </div>
     </div>
