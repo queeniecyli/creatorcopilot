@@ -289,20 +289,6 @@ The application includes mock data fallbacks:
 - Performance prediction ML models
 - Export to PDF/presentation formats
 
-## Author
-
-Built by Queenie Li as a portfolio project demonstrating:
-- AI agent architecture with OpenAI function calling
-- Full-stack development (React + FastAPI)
-- REST API integration
-- Cloud application design
-- Product thinking and UX design
-
-As a content creator myself, this tool has personally transformed my workflow and significantly boosted my productivity.
-
-## License
-
-MIT License - Feel free to use this project as a reference for your own work.
 
 ---
 
