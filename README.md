@@ -1,4 +1,4 @@
-# CreatorCopilot 🎬
+# CreatorCopilot
 
 AI-powered content strategy agent for social media campaigns, built with OpenAI GPT-4o and function calling.
 
