@@ -223,28 +223,6 @@ Tool 2: Content Strategy Generation
 Structured Campaign Output
 ```
 
-### Agent Architecture
-
-The CreatorCopilot agent uses OpenAI's function calling capability to autonomously:
-
-1. **Analyze** the business context and campaign requirements
-2. **Decide** to use the trend research tool
-3. **Execute** the SerpAPI search to gather trending topics
-4. **Synthesize** trend data with business context
-5. **Generate** a complete, platform-optimised campaign strategy
-
-This demonstrates true agent behaviour, not just simple LLM prompting.
-
-## Why OpenAI GPT-4o?
-
-I chose OpenAI GPT-4o with function calling for several reasons:
-
-- **Advanced Function Calling**: Excellent at autonomous decision-making and tool orchestration
-- **Global Availability**: Broad regional support including Australia
-- **Content Quality**: Exceptional performance in creative content and marketing copy
-- **Production-Ready**: Mature API with extensive documentation and reliability
-- **Cost Efficiency**: Competitive pricing suitable for both prototyping and production
-
 ## Development Notes
 
 ### Testing Without API Keys
@@ -280,11 +258,3 @@ The application includes mock data fallbacks:
 3. Set output directory: `dist`
 4. Add environment variable: `VITE_API_URL=https://your-backend-url.com/api`
 
-## Future Enhancements
-
-- Multi-platform campaign generation (all platforms at once)
-- Image generation integration (DALL-E for thumbnails)
-- Campaign history and iteration
-- A/B testing recommendations
-- Performance prediction ML models
-- Export to PDF/presentation formats
